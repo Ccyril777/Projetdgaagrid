@@ -13,7 +13,7 @@
         </li>
         {% if is_granted('ROLE_USER') %}
             <li class="nav-item">
-            <a class="nav-link" href="{{ path('workbook_list') }}">CLASSEURS<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">CLASSEURS<span class="sr-only">(current)</span></a>
             </li>
         {% endif %}
         {% if is_granted('ROLE_ADMIN') %}
@@ -22,15 +22,15 @@
               ADMINISTRATION
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="{{ path('workbook_index') }}">Gestion des Classeurs</a>
-              <a class="dropdown-item" href="{{ path('leaf_index') }}">Gestion des Feuilles</a>
-              <a class="dropdown-item" href="{{ path('board_index') }}">Gestion des Tableaux</a>
+              <a class="dropdown-item" href="#">Gestion des Classeurs</a>
+              <a class="dropdown-item" href="#">Gestion des Feuilles</a>
+              <a class="dropdown-item" href="#">Gestion des Tableaux</a>
             </div>
           </li>
         {% endif %}
       </ul>
     </div>
-  {# {% if app.user %}
+  {% if app.user %}
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -38,7 +38,7 @@
     <a class="btn btn-primary ml-1" href="{{ path('app_logout') }}"> Se déconnecter</a>
   {% else %}
     <a class="btn btn-primary ml-1" href="{{ path('app_login') }}"> Se connecter</a>
-  {% endif %} #}
+  {% endif %}
   </nav>
 
 </header>
