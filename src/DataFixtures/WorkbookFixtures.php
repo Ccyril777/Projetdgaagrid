@@ -40,6 +40,5 @@ class WorkbookFixtures extends Fixture
             $manager->persist($board);
         }
         $manager->flush();
-
     }
 }
